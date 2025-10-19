@@ -1,0 +1,112 @@
+.recommendation-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.recommendation-page h1 {
+  text-align: center;
+  color: #333;
+}
+
+.recommendation-page p {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+form {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+}
+
+form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* --- Final Product Card --- */
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background: #fff;
+  padding-bottom: 15px; /* Add padding at the bottom for spacing */
+}
+
+.product-card img,
+.img-placeholder {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block; /* Ensure image behaves like a block */
+}
+
+.img-placeholder {
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+/* --- Title Styling --- */
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  padding: 10px 15px 5px;
+  margin: 0;
+  margin-bottom: 5px; /* Space below title */
+}
+
+/* --- Price Styling --- */
+.product-card .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0088fe;
+  padding: 0 15px 10px;
+  margin: 0;
+  margin-bottom: 10px; /* Space below price */
+}
+
+/* --- Description Styling (Removed margin-top: auto) --- */
+.product-card .generated-desc {
+  font-size: 0.85rem;
+  color: #555;
+  padding: 10px 15px 0; /* Adjusted padding */
+  margin: 0;
+  border-top: 1px solid #f0f0f0;
+  font-style: italic;
+  /* margin-top: auto; REMOVED THIS LINE */
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}

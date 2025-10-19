@@ -1,0 +1,15 @@
+# Python Virtual Environment
+backend-env/
+
+# Node Modules
+frontend/node_modules/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Pycache
+__pycache__/
+*.pyc
