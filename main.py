@@ -1,5 +1,6 @@
 # --- [Part 1: Imports] ---
 # Backend server
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware # To allow our React app to talk to this server
 
@@ -68,7 +69,7 @@ print("Embedding Model loaded.")
 
 # 5. Pinecone
 # --- !!! IMPORTANT: REPLACE WITH YOUR *NEW* API KEY !!! ---
-PINECONE_API_KEY = "pcsk_7Ey3x5_ULhsd8bPjwRmcB1tuygNmR2dv35axU9hBxsWLBdUReg4qm4NrHKkeQ5QJdDsGDV"
+PINECONE_API_KEY = os.getenv("pcsk_7Ey3x5_ULhsd8bPjwRmcB1tuygNmR2dv35axU9hBxsWLBdUReg4qm4NrHKkeQ5QJdDsGDV")
 INDEX_NAME = "product-recommender"
 
 if not PINECONE_API_KEY or PINECONE_API_KEY == "YOUR_NEW_API_KEY_HERE":
